@@ -1,2 +1,2 @@
 # php proejct
- skate shop system created with my colleague
+ This is a fairly primitive system that i and my colleague, Georgi Karagyozov, have developed for an university course project. It doesn't rely on any framework, and no framework has been used because this was one of the requirements for this project(university requirements). We have used phpMyAdmin for the database creation and have worked with an mysqli client connector to access the database and send queries. It is fairy simple and probably not secure to an SQL injection attack, but it was build with zero php knowledge. It has a neat UI design tho, oh and it took us about 3 days to finish this..it ain't anything special.
