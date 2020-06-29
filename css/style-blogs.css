@@ -1,0 +1,109 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+#main-content{
+	font-family: contentFont;
+	width: 100%;
+	background: rgba(26,26,26,0.8);
+}
+
+#blogs{
+	font-family: contentFont;
+	width: 95%;
+	padding-top: 25px;
+	padding-bottom: 25px; 
+	color: #fff;
+}
+
+#blogs article header div{
+	color: #fff;
+}
+
+#blogs article header div a{
+	color: #fff;
+}
+
+#blogs article{
+	width: 100%;
+	margin-bottom: 28px;
+}
+
+#blogs article{
+	padding-bottom: 10px;
+	border-bottom: 1px solid rgba(245,160,7,0.95);
+}
+
+#blogs article:last-child{
+	padding-bottom: 10px;
+	border-bottom: 0;
+}
+
+#blogs article p{
+	width: 95%;
+	font-size: 1.2em;
+	margin-top: 28px;
+}
+
+.text{
+	float: left;
+	width: 60%;
+}
+
+#blogs article:nth-child(2) .pictures{
+	margin-right: 50px;
+}
+
+.pictures{
+	align-content: center;
+	float: left;
+	width: 36%;
+}
+
+.pictures img{
+	border-radius: 5px;
+	width: 100%;
+	height: 500px;
+}
+
+.img-right{
+	margin-left: 54px;
+}
+
+#blogs article:after{
+	clear: both;
+	content: "";
+	display: table;
+}
+
+#blogs article p span{
+	color: rgb(245,160,7);
+	font-weight: bold;
+}
+
+#blogs article footer{
+	margin-top: 30px;
+}
+
+#blogs article footer a{
+	color: rgb(34,159,217);
+	text-decoration: none;
+	margin-left: 10px;
+}
+
+@media (max-width: 1023px){
+	
+}
+
+@media (max-width: 936px){
+	.text{
+		float: none;
+		width: 100%;
+	}
+
+	.pictures{
+		float: none;
+		width: 100%;
+	}
+}

@@ -1,0 +1,28 @@
+<?php
+if (!isset($_SESSION["userId"]))
+{?>
+    <form class="form-inline my-2 my-lg-0" action="includes/login.inc.php" method="post">
+        <div class="col-auto pl-0">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <div class="input-group-text"><i class="fa fa-user"></i></div>
+                </div>
+                <input type="text" class="form-control" name="username" placeholder="Потребителско име" required>
+            </div>
+        </div>
+        <div class="col-auto pl-0">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <div class="input-group-text"><i class="fa fa-lock"></i></div>
+                </div>
+                <input type="password" name="password" class="form-control" placeholder="Парола" required>
+            </div>
+        </div>
+        <div class="col-auto pl-0 pr-0">
+            <button class="btn btn-warning my-2 my-sm-0" type="submit" name="login-submit">Влез</button>
+         </div>
+    </form>
+<?php }
+else echo "<div id='credentials' style='margin-right:15px;'>" . $_SESSION["username"] . ", " . $_SESSION["firstName"]." ".$_SESSION['lastName']." "."</div>" . " <a id='logout-link' href='includes/logout.inc.php'>Изход</a>&nbsp;&nbsp;";
+?>
+</div>
